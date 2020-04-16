@@ -12,7 +12,8 @@ public class ListaCanales {
     private Canal[] canales;
 
     /** Constructor
-     * @param tam tamanho maximo del vector
+     * @param nombre Nombre del canal
+     * @param tam Tamanho maximo del vector
      */
     public ListaCanales(String nombre, int tam) {
         numCanales=0;
@@ -21,6 +22,8 @@ public class ListaCanales {
     }
 
     /** Crea un nuevo canal y lo inserta al final
+     * @param c Nuevo canal
+     * @throws Exception (NPE)
      */
     public void nuevoCanal(Canal c) throws Exception {
         if (numCanales != canales.length) {
@@ -48,6 +51,7 @@ public class ListaCanales {
     /** Devuelve el canal en una posicion
      * @param pos posicion a buscar
      * @return el canal en la posicion dada
+     * @throws Exception Fuera de rango
      */
     public Canal canalAt(int pos) throws Exception {
         if (pos >= 0 && pos < numCanales) {
@@ -59,6 +63,7 @@ public class ListaCanales {
 
     /** Devuelve el canal en una posicion
      * @return el canal mas antiguo
+     * @throws Exception Sin canales
      */
     public Canal masAntiguo() throws Exception {
         if (numCanales != 0) {
