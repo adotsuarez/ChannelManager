@@ -16,5 +16,5 @@ En este proyecto se harán modificaciones de manera periódica para mejorar su f
 
 ## Creadores y licencias
 
-- El programa fue creado originalmente por_'@adotsuarez'_.
+- El programa fue creado originalmente por _'@adotsuarez'_.
 - Para más información sobre licencias, por favor, lee el archivo LICENSE.
